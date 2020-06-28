@@ -1,3 +1,6 @@
 C:\Users\amirs\source\repos\Myportfolio\Myportfolio\obj\Debug\Myportfolio.njsprojAssemblyReference.cache
 C:\Users\amirs\source\repos\Myportfolio\Myportfolio\obj\Debug\Myportfolio.njsproj.CoreCompileInputs.cache
 C:\Users\amirs\source\repos\Myportfolio\Myportfolio\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\amirs\Desktop\java script\Lab2\Comp2068-Assignment1\Myportfolio\obj\Debug\Myportfolio.njsprojAssemblyReference.cache
+C:\Users\amirs\Desktop\java script\Lab2\Comp2068-Assignment1\Myportfolio\obj\Debug\Myportfolio.njsproj.CoreCompileInputs.cache
+C:\Users\amirs\Desktop\java script\Lab2\Comp2068-Assignment1\Myportfolio\bin\Microsoft.NodejsTools.WebRole.dll

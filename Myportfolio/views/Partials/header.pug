@@ -1,14 +1,18 @@
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/main.css')
-    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css", rel="stylesheet", integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk", crossorigin="anonymous")
-  body
-    a(href="/") Home &nbsp  &nbsp
-    a(href="/project") Project &nbsp  &nbsp
-    a(href="/service") Service &nbsp  &nbsp
-    a(href="/aboutme") About Me &nbsp
-     a(href="/contact") Contact &nbsp
+//-bootstrap navbar borrowed from the bootstrap website
+mixin NavItem(link, text)
+    li.nav-item.active
+        a.nav-link(href=link)=text
 
-    block content
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='/') Home 
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+
+     
+
+      +NavItem('/aboutme', 'About Me')
+      +NavItem('/project', 'Projects')
+      +NavItem('/service', 'Services')
+      +NavItem('/contact', 'Contact Me')
