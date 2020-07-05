@@ -3,20 +3,29 @@
 //- header.pug
 
 //-bootstrap navbar borrowed from the bootstrap website
-mixin NavItem(link, text)
-    li.nav-item.active
-        a.nav-link(href=link)=text
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-light
-  a.navbar-brand(href='/') Home 
-  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-  #navbarSupportedContent.collapse.navbar-collapse
-    ul.navbar-nav.mr-auto
-
-     
-
-      +NavItem('/aboutme', 'About Me')
-      +NavItem('/project', 'Projects')
-      +NavItem('/service', 'Services')
-      +NavItem('/contact', 'Contact Me')
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="aboutme">Amir</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/project">Project</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/service">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/aboutme">About me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

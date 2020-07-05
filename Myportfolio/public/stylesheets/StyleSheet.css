@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Caveat%7CKaushan+Script%7CPacifico%27');
-
-
-
 body {
-    align-content: center;
-    background-color: #99988a;
+    
+    color: #e0e0da;
+    text-align: match-parent;
     font-family: 'Pacifico', cursive;
+   
+    background-image: url(http://www.cedarfielddesign.com/wp-content/uploads/2016/07/slider1-1.jpg);
 }
+
+h1 {
+    color: #e0e0da;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
 
 input, button {
     /* textfields styles*/
     width: 30%;
-    background-color: #99988a;
+    background-color: antiquewhite;
     padding: 12px 20px;
     margin: 8px;
     box-sizing: border-box;
@@ -22,7 +27,7 @@ input, button {
 textarea {
     /* textfields styles*/
     width: 90%;
-    background-color: #99988a;
+    background-color: antiquewhite;
     padding: 12px 20px;
     margin: 8px;
     box-sizing: border-box;
@@ -31,7 +36,7 @@ textarea {
 }
 
 .form-control {
-    border: 2px solid #99988a;
+    border: 2px solid antiquewhite;
 }
 
     .form-control:focus {
@@ -40,26 +45,4 @@ textarea {
 
 button:hover {
     box-shadow: 10px 10px 5px grey;
-}
-
-.grid-container {
-    /* flex box container */
-    display: flex;
-    justify-content: center;
-}
-
-.grid {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    width: 900px;
-    flex-wrap: wrap;
-    background-color: #333;
-}
-
-.grid-item img {
-    margin: 20px;
-    /* change size of images */
-    width: 400px;
-    height: 200px;
 }

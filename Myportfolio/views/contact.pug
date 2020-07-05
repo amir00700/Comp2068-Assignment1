@@ -8,10 +8,12 @@ block content
     h2 #{messageSent}
     //-contact form
     form(method = "POST" action="send")
-        input(name="name" type="text" placeholder = "Your Name")
+        input(name="name" type="text" placeholder = "Your Name") 
         input(name="subject" type="text" placeholder = "Subject")
+        
         input(name="email" type="email" placeholder = "Your Email")
+        //-input(name="phone" type="phone" placeholder = "Your Phone")
         textarea(name="message", cols="30", rows="10",placeholder = "Write your message here...")
 
         //-submit button that does nothing so far
-        button(type="sumbit") Send
+        button(type="sumbit") Contact
